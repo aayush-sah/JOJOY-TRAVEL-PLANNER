@@ -59,9 +59,6 @@ Debugging and deploying step-by-step
 
 I’m proud to have completed this project last year and deployed it now in 2025. It’s been an incredible learning curve — and it only gets better from here!
 
-🔗 Live Deployment
-👉 Jojoy Travel Planner (Vercel/GitHub Pages link)
-(Replace with your live link after deployment)
 
 🧑‍💻 Built With
 HTML, CSS, JavaScript
