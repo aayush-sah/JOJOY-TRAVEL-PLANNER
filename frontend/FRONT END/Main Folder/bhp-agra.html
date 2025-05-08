@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Routes</title>
+    <link rel="stylesheet" href="route.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Available Routes</h1>
+        <h3>From: <span id="from-destination"></span> To: <span id="to-destination"></span></h3>
+        <h4>Travel Date: <span id="travel-date"></span></h4>
+
+        <div id="routes">
+            <div id="train-routes">
+                <h3>Train Routes</h3>
+                <ul id="train-list"></ul>
+            </div>
+
+            <div id="bus-routes">
+                <h3>Bus Routes</h3>
+                <ul id="bus-list"></ul>
+            </div>
+
+            <div id="flight-routes">
+                <h3>Flight Routes</h3>
+                <ul id="flight-list"></ul>
+            </div>
+        </div>
+
+        <div id="back-button">
+            <button
+                class="back-button"
+                type="button"
+                onclick="window.history.back()"
+            >
+                Back to Booking
+            </button>
+        </div>
+    </div>
+    <script src="routedis.js"></script>
+</body>
+</html>

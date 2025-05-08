@@ -1,0 +1,77 @@
+/* Background Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* No blur effect applied here */
+.background {
+    background: url('https://bombaytrooper.com/wp-content/uploads/2024/04/0_yGBBhx693nFddxTs.png') no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+}
+
+.form-container h1 {
+    color: #8CB9BA;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    color: #2a572a;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.form-container strong {
+    color: red;
+}
+
+/* Input Fields */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #12293A;
+}
+
+input, select {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #12293A;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #12293A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a572a;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .destination-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .destination-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .destination-item img:hover {
+            transform: scale(1.05);
+        }
+        .details-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        .details-modal h3 {
+            margin-top: 0;
+        }
+        .details-modal button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .details-modal button:hover {
+            background: #0056b3;
+        }
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details | Jojoy</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    
+
+    <div id="header">
+        <h1>Destination Details</h1>
+        <p>Discover new places to visit in India</p>
+    </div>
+
+    <div id="destination-form">
+        <label for="state">Choose a State:</label>
+        <select id="state" onchange="getDestinationDetails()">
+            <option value="">Select State</option>
+             <option value="Andhra Pradesh">Andhra Pradesh</option>
+             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+             <option value="Assam">Assam</option>
+             <option value="Goa">Goa</option>
+             <option value="Gujarat">Gujarat</option>
+             <option value="Himachal Pradesh">Himachal Pradesh</option>
+             <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+             <option value="Jharkhand">Jharkhand</option>
+             <option value="Kerela">Kerela</option>
+             <option value="Leh and Ladakh">Leh and Ladakh</option>
+             <option value="Madhya Pradesh">Madhya Pradesh</option>
+             <option value="Maharashtra">Maharashtra</option>
+             <option value="Punjab">Punjab</option>
+             <option value="Rajasthan">Rajasthan</option>
+             <option value="Sikkim">Sikkim</option>
+             <option value="Tamil Nadu">Tamil Nadu</option>
+             <option value="Uttarakhand">Uttarakhand</option>
+             <option value="Uttar Pradesh">Uttar Pradesh</option>  
+        </select>
+    </div>
+
+    <div id="destination-details">
+        <h3>Places to Visit</h3>
+        <ul id="destination-list"></ul>
+    </div>
+
+    <div id="vehicle-rental">
+        <h3>Vehicle Rentals</h3>
+        <button class="rental-button" onclick="location.href='rental.html'">Explore Rentals</button>
+    </div>
+
+    
+    <div id="back">
+        <button onclick="location.href='index.html'">Back to Main Menu</button>
+    </div>
+
+    <script src="destinationDetails.js"></script>
+</body>
+</html>

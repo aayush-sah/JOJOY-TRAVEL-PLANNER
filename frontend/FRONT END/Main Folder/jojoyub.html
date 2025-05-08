@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking</title>
+    <link rel="stylesheet" href="ub.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center relative bg-gray-50">
+
+    <!-- Background Video -->
+    <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+        <source src="242786_tiny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Main Content -->
+    <div class="max-w-lg mx-auto bg-white/80 rounded-lg shadow-lg p-10 space-y-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Urgent Booking</h1>
+
+        <!-- From Destination -->
+        <div>
+            <label for="from-destination" class="block text-lg font-semibold mb-2">From Destination</label>
+            <select id="from-destination" class="w-full border border-gray-300 rounded-lg px-4 py-2">
+                <option value="">Select</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Bilaspur">Bilaspur</option>
+            </select>
+        </div>
+
+        <!-- Arrival Station (Search Bar with Scrollable Dropdown) -->
+        <div>
+            <label for="search-station" class="block text-lg font-semibold mb-2">Arrival Location </label>
+            <div class="relative">
+                <input
+                    id="search-station"
+                    type="text"
+                    placeholder="Search arrival station..."
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2"
+                />
+                <div
+                    id="arrival-dropdown"
+                    class="absolute w-full max-h-40 border border-gray-300 rounded-lg bg-white shadow-lg overflow-y-auto mt-2 hidden"
+                ></div>
+            </div>
+        </div>
+
+        <!-- Travel Date -->
+        <div>
+            <label for="travel-date" class="block text-lg font-semibold mb-2">Travel Date</label>
+            <input
+                type="date"
+                id="travel-date"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2"
+            />
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between items-center">
+            <!-- Back Button -->
+            <button
+                class="bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold group"
+                type="button"
+                onclick="window.location.href='index.html'"
+            >
+                <div
+                    class="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1024 1024"
+                        height="25px"
+                        width="25px"
+                    >
+                        <path
+                            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+                            fill="#000000"
+                        ></path>
+                        <path
+                            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+                            fill="#000000"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="translate-x-2">Go Back</p>
+            </button>
+            <!-- Travel Options Output (AI Response) -->
+<div id="travel-options" class="mt-6 bg-white/90 rounded-lg shadow-md p-4 text-black text-sm hidden">
+    <h3 class="text-lg font-semibold mb-2">Travel Options</h3>
+    <p>Travel details will appear here after you click "Book Now".</p>
+</div>
+            <!-- Book Now Button -->
+            <button
+                id="book-now"
+                class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 text-lg font-semibold"
+            >
+                Book Now
+            </button>
+        </div>
+    </div>
+
+    <script src="ub.js"></script>
+</body>
+</html>

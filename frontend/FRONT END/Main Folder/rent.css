@@ -1,0 +1,77 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f5fdf5;
+    color: #12293A;
+}
+
+/* Header Section */
+#header {
+    margin-bottom: 20px;
+}
+
+#header h1 {
+    font-size: 2.5em;
+    color: #12293A;
+}
+
+#header p {
+    font-size: 1.2em;
+}
+
+/* Rental Options Section */
+#rental-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rental-option button {
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    color: #12293A;
+    font-weight: bold;
+}
+
+.rental-option button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rental-option img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Back Button */
+#back {
+    margin-top: 20px;
+}
+
+#back button {
+    background-color: #12293A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#back button:hover {
+    background-color: #12293A;
+    transform: scale(1.05);
+}

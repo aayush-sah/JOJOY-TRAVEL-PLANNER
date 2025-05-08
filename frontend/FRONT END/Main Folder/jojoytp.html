@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="stylei.css">
+</head>
+<body>
+    <h1>Travel Planner</h1>
+    <form id="travelForm">
+        <label>Name: <input type="text" id="name" required></label><br>
+        <label>Age: <input type="number" id="age" required></label><br>
+        <label>From: <input type="text" id="from" required></label><br>
+        <label>Destination: <input type="text" id="destination" required></label><br>
+        <label>Number of People: <input type="number" id="people" required></label><br>
+        <label>From Date: <input type="date" id="fromDate" required></label><br>
+        <label>To Date: <input type="date" id="toDate" required></label><br>
+        <label>Budget: <input type="number" id="budget" required></label><br>
+        <label>Preferred Transportation:</label><br>
+        <label><input type="checkbox" id="train" value="Train"> Train</label><br>
+        <label><input type="checkbox" id="bus" value="Bus"> Bus</label><br>
+        <label><input type="checkbox" id="flight" value="Flight"> Flight</label><br>
+        <button type="submit">Plan Trip</button>
+    </form>
+    <script src="tp.js"></script>
+    <script>
+        // Set minimum date to today for both date inputs
+        document.addEventListener("DOMContentLoaded", () => {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById("fromDate").setAttribute("min", today);
+            document.getElementById("toDate").setAttribute("min", today);
+        });
+    </script>
+</body>
+</html>

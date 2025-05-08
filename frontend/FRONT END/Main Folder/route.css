@@ -1,0 +1,111 @@
+/* Reset & Base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Header */
+  .route-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+    color: #0f172a;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.4em;
+    color: #2563eb;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  h4, p {
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  /* Routes Section */
+  ul {
+    list-style: disc inside;
+    margin: 10px 0 20px;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    background: linear-gradient(to right, #10b981, #059669);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #059669, #047857);
+    transform: scale(1.05);
+  }
+  
+  .back-button-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .back-button {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .back-button:hover {
+    background-color: #334155;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    li {
+      font-size: 0.95rem;
+    }
+  
+    .back-button {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Details</title>
+    <link rel="stylesheet" href="tpst.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Trip Details</h1>
+        <h3>Places to Visit</h3>
+        <ul>
+            {% for place in details.places_to_visit %}
+                <li>{{ place }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Hotel Preferences</h3>
+        <ul>
+            {% for hotel in details.hotel_preferences %}
+                <li>{{ hotel }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Estimated Travel Cost</h3>
+        <p>{{ details.travel_estimate }} USD</p>
+        <h3>Itinerary</h3>
+        <ul>
+            {% for item in details.itinerary %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Preferences</h3>
+        <p>{{ details.preferences | join(', ') }}</p>
+    </div>
+</body>
+</html>

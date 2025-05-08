@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Plan</title>
+    <link rel="stylesheet" href="stylei.css">
+</head>
+<body>
+    <h1>Your Travel Plan</h1>
+    <div id="planContainer"></div>
+    <a href="jojoytp.html">Plan Another Trip</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const plan = localStorage.getItem('travelPlan');
+            if (plan) {
+                document.getElementById('planContainer').innerText = plan;
+            } else {
+                document.getElementById('planContainer').innerText = "No travel plan found.";
+            }
+        });
+    </script>
+</body>
+</html>

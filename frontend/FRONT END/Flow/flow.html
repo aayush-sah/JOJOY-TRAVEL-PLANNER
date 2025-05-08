@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojoy Project Execution Flowchart</title>
+    <link rel="stylesheet" href="flow.css">
+</head>
+<body>
+    <div class="flowchart">
+        <!-- Start -->
+        <div id="start" class="shape terminal">Start</div>
+        <div class="arrow down"></div>
+
+        <!-- Collect Requirements -->
+        <div id="collect-requirements" class="shape process">Collect User Requirements</div>
+        <div class="arrow down"></div>
+
+        <!-- Decision -->
+        <div id="budget-valid" class="shape decision">Is Budget Valid?</div>
+        <div class="arrow right"></div>
+        <div class="arrow down right-arrow"></div>
+        <div class="arrow down left-arrow"></div>
+
+        <!-- Yes Path -->
+        <div id="plan-destinations" class="shape process yes-path">Plan Destinations</div>
+        <div class="arrow down"></div>
+
+        <!-- Prepare Options -->
+        <div id="prepare-options" class="shape process">Prepare Personalized Options</div>
+        <div class="arrow down"></div>
+
+        <!-- Output Results -->
+        <div id="display-results" class="shape input-output">Display Results to User</div>
+        <div class="arrow down"></div>
+
+        <!-- Finalize Booking -->
+        <div id="finalize-booking" class="shape process">Finalize Booking</div>
+        <div class="arrow down"></div>
+
+        <!-- End -->
+        <div id="end" class="shape terminal">End</div>
+
+        <!-- No Path -->
+        <div id="invalid-budget" class="shape terminal no-path">End (Invalid Budget)</div>
+    </div>
+</body>
+</html>

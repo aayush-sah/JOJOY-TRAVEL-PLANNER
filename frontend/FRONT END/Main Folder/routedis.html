@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jojoy | Available Routes</title>
+  <link rel="stylesheet" href="route.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="route-header">
+      <h1>Available Routes</h1>
+      <p><strong>From:</strong> <span id="from-destination">--</span> &nbsp;&nbsp;&nbsp;
+         <strong>To:</strong> <span id="to-destination">--</span></p>
+      <p><strong>Travel Date:</strong> <span id="travel-date">--</span></p>
+    </header>
+
+    <main id="routes">
+      <section id="train-routes" class="route-section">
+        <h3>🚆 Train Routes</h3>
+        <ul id="train-list"></ul>
+      </section>
+
+      <section id="bus-routes" class="route-section">
+        <h3>🚌 Bus Routes</h3>
+        <ul id="bus-list"></ul>
+      </section>
+
+      <section id="flight-routes" class="route-section">
+        <h3>✈️ Flight Routes</h3>
+        <ul id="flight-list"></ul>
+      </section>
+    </main>
+
+    <footer class="back-button-container">
+      <button class="back-button" onclick="window.history.back()">← Back to Booking</button>
+    </footer>
+  </div>
+
+  <script src="routedis.js"></script>
+</body>
+</html>

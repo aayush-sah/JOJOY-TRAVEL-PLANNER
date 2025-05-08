@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Jojoy</title>
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="242786_tiny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="form-container">
+        <p class="title">Welcome Back</p>
+        <form class="form" action="index.html">
+            <input type="email" class="input" placeholder="Email" required>
+            <input type="password" class="input" placeholder="Password" required>
+            <button class="form-btn" type="submit">Sign In</button>
+
+            <div class="social-login-horizontal">
+                <button type="button" class="social-icon-button google" title="Login with Google">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button type="button" class="social-icon-button facebook" title="Login with Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button type="button" class="social-icon-button twitter" title="Login with Twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </div>              
+        </form>
+        <p class="sign-up-label">
+            Don't have an account? <a href="signup.html" class="sign-up-link">Sign Up</a>
+        </p>
+    </div>
+
+    <!-- Firebase JS SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCPnZcYZ12ddWqu_4PDT1Sazl5ZzVsDB-M",
+            authDomain: "jojoy-c1b9b.firebaseapp.com",
+            projectId: "jojoy-c1b9b",
+            storageBucket: "jojoy-c1b9b.firebasestorage.app",
+            messagingSenderId: "784632815554",
+            appId: "1:784632815554:web:df98583ef788cafa99c05b",
+            measurementId: "G-WJ8DKPX6ZP"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
+        // Google Login
+        document.querySelector('.google').addEventListener('click', () => {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithPopup(provider)
+                .then(result => {
+                    alert(`Welcome ${result.user.displayName}`);
+                    window.location.href = "index.html"; // Redirect after login
+                })
+                .catch(error => alert(error.message));
+        });
+
+        // Facebook Login
+        document.querySelector('.facebook').addEventListener('click', () => {
+            const provider = new firebase.auth.FacebookAuthProvider();
+            auth.signInWithPopup(provider)
+                .then(result => {
+                    alert(`Welcome ${result.user.displayName}`);
+                    window.location.href = "index.html";
+                })
+                .catch(error => alert(error.message));
+        });
+
+        // Twitter Login
+        document.querySelector('.twitter').addEventListener('click', () => {
+            const provider = new firebase.auth.TwitterAuthProvider();
+            auth.signInWithPopup(provider)
+                .then(result => {
+                    alert(`Welcome ${result.user.displayName}`);
+                    window.location.href = "index.html";
+                })
+                .catch(error => alert(error.message));
+        });
+    </script>
+</body>
+</html>
