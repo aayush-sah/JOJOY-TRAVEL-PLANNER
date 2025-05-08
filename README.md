@@ -1,48 +1,85 @@
+# 🧭 JOJOY — Your Smart Travel Buddy
 
-# JOJOY Project
+**Jojoy** is my **first ever group project** built with the goal of creating a connected, real-time **Travel Planning Platform**. From dynamic destination details to urgent bookings and customized itineraries — it combines user-friendly UI with backend intelligence powered by **OpenAI API**.
 
-A combined **frontend + backend** web application built using HTML, CSS, JavaScript, and Python (Flask).
+This project helped me understand the full development cycle — from frontend UI to backend API integration, and how real-time user needs can be solved effectively using AI.
 
-## 🔧 Project Structure
+---
 
-```
-JOJOY_Cleaned/
-├── frontend/          # HTML, CSS, JavaScript files
-│   └── index.html     # Entry point (open via Live Server)
-├── backend/           # Python backend (Flask or other scripts)
-│   └── app.py         # Main backend script
-├── requirements.txt   # Python dependencies
-├── .gitignore         # Git ignore file
-└── README.md          # Project documentation
-```
+## 🚀 Features
 
-## 🚀 Running the Project
+✅ Real-time **Travel Planning** with dynamic itinerary generation  
+✅ Urgent **Booking Assistant** for trains, buses, and flights (AI-powered)  
+✅ Live **Destination Details** with interactive search  
+✅ Fully functional UI connected via **Flask + JS + OpenAI API**  
+✅ Styled with **Tailwind CSS / Custom CSS** for a modern look  
+✅ **Deployed** this year, after building it last year 🙌
 
-### Frontend
-Open `frontend/welcome.html` using **Live Server** in VS Code or any static server.
+---
 
-### Backend
-1. Navigate to the backend folder:
-    ```bash
-    cd backend
-    ```
-2. Create a virtual environment (optional but recommended):
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-3. Install dependencies:
-    ```bash
-    pip install -r ../requirements.txt
-    ```
-4. Run the app:
-    ```bash
-    python app.py
-    ```
+## 🛠️ How to Run Locally
 
-Visit `http://127.0.0.1:5000` in your browser if using Flask.
+> Ensure Python and Flask are installed.
 
-## 📝 Notes
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/aayush-sah/jojoy-travel-planner.git
+   cd jojoy-travel-planner
+Run the Flask backend
 
-- Avoid committing `.venv` or environment folders.
-- Ensure relative links in HTML (no absolute system paths).
+bash
+Copy
+Edit
+python app.py
+Open welcome.html using Live Server or in your browser.
+
+🗂️ Project Structure
+bash
+Copy
+Edit
+├── app.py                   # Flask backend handling AI APIs
+├── welcome.html             # Landing Page
+├── jojoyub.html             # Urgent Booking Interface
+├── routedis.html            # Route Results
+├── style.css / route.css    # Styling
+├── routedis.js / ub.js      # Frontend Logic
+├── travelplan.html + tp.js  # AI-based Travel Planner
+├── index.html               # Home Router
+└── README.md                # You're here!
+💬 Reflections
+This being my first full project, it taught me:
+
+How to think in terms of real-world user problems
+
+How to work as a team on Git + GitHub
+
+Integrating AI into functional features
+
+Debugging and deploying step-by-step
+
+I’m proud to have completed this project last year and deployed it now in 2025. It’s been an incredible learning curve — and it only gets better from here!
+
+🔗 Live Deployment
+👉 Jojoy Travel Planner (Vercel/GitHub Pages link)
+(Replace with your live link after deployment)
+
+🧑‍💻 Built With
+HTML, CSS, JavaScript
+
+Tailwind CSS
+
+Flask (Python)
+
+OpenAI GPT-3.5 API
+
+Git + GitHub
+
+Made with 💙 by Aayush & Team
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you want a version with screenshots, badges, or contribution instructions!
