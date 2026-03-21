@@ -73,10 +73,3 @@ Git + GitHub
 
 Made with 💙 by Aayush & Team
 
-yaml
-Copy
-Edit
-
----
-
-Let me know if you want a version with screenshots, badges, or contribution instructions!
